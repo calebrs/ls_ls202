@@ -5,28 +5,33 @@
     <meta charset="utf-8" />
     <style>
       body {
-        border: solid black;
+        border: solid 2px black;
         box-sizing: border-box;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 28px;
+        padding-bottom: 10px;
         width: 700px;
       }
 
       header {
         box-sizing: border-box;
-        border-bottom: solid 20px black;
+        border-bottom: solid 30px black;
         padding-bottom: 5px;
         margin: 0 10px;
       }
 
       section {
         box-sizing: border-box;
-        border-bottom: solid 10px black;
+        border-bottom: solid 15px black;
         margin: 0 10px;
       }
 
-      section:nth-child(3) tr {
+      section:nth-child(3) td {
         border-top: solid 1px black;
+      }
+
+      section:nth-child(3) td:nth-child(3){
+        font-weight: bold;
       }
 
       section:nth-child(4) {
@@ -43,9 +48,21 @@
         border-bottom: solid 1px black;
       }
 
+      section:nth-child(4) table:last-child {
+        font-size: 1.4rem;
+      }
+
+      section:nth-child(4) table:last-child tr:first-child {
+        border-bottom: solid 1px black;
+      }
+
+      section:nth-child(4) table:last-child td:nth-child(2) {
+        text-align: center;
+      }
+
       h1 {
         box-sizing: border-box;
-        font-family: Franklin Gothic Heavy;
+        font-family: Franklin Gothic;
         margin: auto;
         padding: 0;
       }
@@ -57,11 +74,11 @@
         border-bottom: solid 1px black;
       }
 
-      td:nth-child(2) {
+      td:last-child {
         text-align: right;
       }
 
-      td:nth-child(1) {
+      td:nth-child(2) {
         text-align: left;
       }
 
@@ -74,6 +91,21 @@
         margin: 0;
         padding: 0;
       }
+
+      section:nth-child(4) p {
+        padding: 15px;
+        font-size: 1.6rem;
+        text-indent: -1rem;
+      }
+
+      section:nth-child(4) .indent td:nth-child(1) {
+        text-indent: 30px;
+      }
+
+      .indent {
+        text-indent: 2rem;
+      }
+
     </style>
   </head>
   <body>
@@ -86,6 +118,7 @@
       <h4>Amount Per Serving</h4>
     <table>
       <tr>
+        <td></td>
         <td>
           <strong>Calories</strong>
           230
@@ -98,28 +131,32 @@
       <table>
         <tr>
           <td></td>
-          <td>
-            <strong>% Daily Value*</strong>
-          </td>
+          <td></td>
+          <td>% Daily Value*</td>
         </tr>
         <tr>
+          <td></td>
           <td>
             <strong>Total Fat</strong>
             8g
           </td>
           <td>12%</td>
         </tr>
-        <tr class="indent">
+        <tr>
+          <td class="indent"></td>
           <td>Saturated Fat 1g</td>
           <td>5%</td>
         </tr>
-        <tr class="indent">
+        <tr>
+          <td class="indent"></td>
           <td>
             <em>Trans</em>
             Fat 0g
           </td>
+          <td></td>
         </tr>
         <tr>
+          <td></td>
           <td>
             <strong>Cholesterol</strong>
             0mg
@@ -127,6 +164,7 @@
           <td>0%</td>
         </tr>
         <tr>
+          <td></td>
           <td>
             <strong>Sodium</strong>
             160mg
@@ -134,26 +172,34 @@
           <td>7%</td>
         </tr>
         <tr>
+          <td></td>
           <td>
             <strong>Total Carbohydrates</strong>
             37g
           </td>
           <td>12%</td>
         </tr>
-        <tr class="indent">
+        <tr>
+          <td class="indent"></td>
           <td>Dietary Fiber 4g</td>
-        </tr>
-        <tr class="indent">
-          <td>Sugars 1g</td>
+          <td></td>
         </tr>
         <tr>
+          <td class="indent"></td>
+          <td>Sugars 1g</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
           <td>
             <strong>Protein</strong>
             3g
           </td>
+          <td></td>
         </tr>
       </table>
     </section>
+
     <section>
       <table>
         <tr>
@@ -179,7 +225,7 @@
       <table>
         <tr>
           <td></td>
-          <td>Calories</td>
+          <td>Calories:</td>
           <td>2,000</td>
           <td>2,500</td>
         </tr>
@@ -189,8 +235,8 @@
           <td>65g</td>
           <td>80g</td>
         </tr>
-        <tr class="indent">
-          <td>Sat Fat</td>
+        <tr>
+          <td class="indent">Sat Fat</td>
           <td>Less than</td>
           <td>20g</td>
           <td>25g</td>
@@ -213,8 +259,8 @@
           <td>300g</td>
           <td>375g</td>
         </tr>
-        <tr class="indent">
-          <td>Dietary Fiber</td>
+        <tr>
+          <td class="indent">Dietary Fiber</td>
           <td></td>
           <td>25g</td>
           <td>30g</td>
