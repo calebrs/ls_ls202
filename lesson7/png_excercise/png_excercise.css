@@ -19,7 +19,7 @@ header {
 }
 
 h1 {
-  background: transparent url("logo.png") no-repeat;
+  background: transparent url("logo.png");
   font-size: 36px;
   font-weight: normal;
   float: left;

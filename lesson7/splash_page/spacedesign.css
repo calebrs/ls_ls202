@@ -14,21 +14,43 @@ header {
   width: 1000px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 header img {
-  margin: 160px 0 90px;
+  margin: 135px 0 125px;
+}
+
+header li {
+  display: inline-block;
+  padding: 0 45px;
+}
+
+header ul {
+  text-align: center;
+  margin: 0 0 50px;
+  font-size: 26px;
+}
+
+header a {
+  text-decoration: none;
+  color: #cacaca;
+}
+
+nav a.active {
+  font-weight: bolder;
+  color: #6db9ff;
 }
 
 main {
   box-sizing: border-box;
   margin: 0 auto;
-  width: 1000px;
+  width: 100%;
   background-color: white;
-  padding: 110px 90px 70px;
+  padding: 120px 0 75px;
 }
 
-h2, h3 {
+h1, h2, h3 {
   text-align: center;
 }
 
@@ -37,45 +59,78 @@ h2 {
   margin: 0 0 40px;
 }
 
-main p {
-  font-size: 20px;
+p {
   text-align: center;
+  font-size: 20px;
+}
+
+main p {
+  margin: 0 90px;
+}
+
+footer p {
+  color: #b1b1b1;
+}
+
+article {
+  margin: 0 auto;
+  width: 1000px;
 }
 
 .founder_text {
-  margin: 175px 0 40px;
+  margin: 78px 0 46px;
 }
 
 h3 {
   font-size: 1.2rem;
   font-weight: bold;
   color: #3e98b2;
-  margin-bottom: 36px;
+  margin-bottom: 26px;
 }
 
 footer {
   box-sizing: border-box;
-  margin: 0 auto 145px;
-  width: 1000px;
+  margin: 0 auto;
+  width: 100%;
   background-color: #e7e7e7;
-  height: 115px;
-  padding: 33px;
+  padding: 88px 0 76px;
 }
 
 footer ul {
-  margin: 0 auto;
+  box-sizing: border-box;
+  margin: 40px auto 0;
   text-align: center;
 }
 
 footer li {
-  display: inline;
-  padding: 0 58px;
+  display: inline-block;
+  padding: 0 62px;
 }
 
-footer a {
-  margin: 30px 0 0;
+footer li a {
+  display: block;
+  background: transparent url(icons_social-media.png) 0 0 no-repeat;
+  height: 46px;
+  width: 46px;
+  overflow: hidden;
+  text-indent: -8685px;
 }
 
-img {
-  vertical-align: middle;
+footer li a.twitter {
+  background-position: 0 0;
 }
+
+footer li a.facebook {
+  background-position: 0 -46px;
+}
+
+footer li a.email {
+  background-position: 0 -92px;
+}
+
+footer li a.instagram {
+  background-position: 0 -138px;
+}
+
+
+
