@@ -26,14 +26,14 @@ main {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 36px;
   padding: 36px 0 36px 24px;
 }
 
 h2 {
   font-size: 28px;
   font-weight: 600;
-  padding: 0 0 30px;
+  margin: 0 0 30px;
 }
 
 h3 {
@@ -46,7 +46,7 @@ p {
 }
 
 li {
-  display: inline-block;
+  box-sizing: border-box;
   background-color: #ffffff;
   width: 200px;
   padding: 15px 20px 15px 20px;
@@ -57,10 +57,16 @@ a {
 }
 
 ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 15px;
   box-sizing: border-box;
 }
 
 img {
+  box-sizing: border-box;
   padding: 0 0 24px;
   display: block;
   margin: 0 auto;
