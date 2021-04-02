@@ -59,6 +59,8 @@ main {
 }
 
 h3 {
+  margin: 75px 0 0;
+  text-align: center;
   font-size: 48px;
   font-weight: 100;
 }
@@ -127,11 +129,134 @@ div {
   font-size: 16px;
 }
 
-.tickets h3 {
-  margin: 75px 0 0;
-}
-
 .tickets a {
   margin: 15px 0 0;
-  cursor: pointer;
 }
+
+.speakers h3 {
+  margin: 75px 0 50px;
+}
+
+.speakers ul {
+  display: grid;
+  grid-template-areas:
+    "gregor lynn eduardo"
+    "francis tim dave"
+    "ju timp david"
+    "bernard john eric";
+  grid-template-columns: 280px 280px 280px;
+  grid-template-rows: 380px 380px 380px 380px;
+  justify-content: center;
+  text-align: center;
+  column-gap: 15px;
+  row-gap: 10px;
+}
+
+.speakers li {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 1px solid #e8e8e8;
+}
+
+.speakers figure {
+  background-color: cadetblue;
+  width: auto;
+  height: 230px;
+}
+
+.speakers h4 {
+  margin: 40px 0 0;
+  font-size: 24px;
+}
+
+.speakers p {
+  margin: 20px 0 0;
+  font-size: 16px;
+}
+
+.gregor {
+  grid-area: "gregor";
+}
+
+.lynn {
+  grid-area: "lynn";
+}
+
+.eduardo {
+  grid-area: "eduardo";
+}
+
+.francis {
+  grid-area: "francis";
+}
+
+.tim {
+  grid-area: "tim";
+}
+
+.dave {
+  grid-area: "dave";
+}
+
+.ju {
+  grid-area: "ju";
+}
+
+.timp {
+  grid-area: "timp";
+}
+
+.david {
+  grid-area: "david";
+}
+
+.bernard {
+  grid-area: "bernard";
+}
+
+.john {
+  grid-area: "john";
+}
+
+.eric {
+  grid-area: "eric";
+}
+
+.schedule table {
+  margin: 45px auto 0;
+  border-collapse: collapse;
+  border-bottom: 1px solid #e8e8e8;
+  max-width: 960px;
+}
+
+.schedule td {
+  padding: 10px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.schedule td {
+  font-size: 24px;
+}
+
+.schedule td img {
+  background-color: cadetblue;
+  width: 130px;
+  height: 110px;
+}
+
+.schedule td a {
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+  color: #008000;
+  margin: 20px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  width: max-content;
+}
+
+.schedule td a:hover {
+  text-decoration: underline;
+}
+
